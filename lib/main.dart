@@ -53,11 +53,38 @@ class BusinessCard extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    Spacer(flex: 1),
-                    Icon(Icons.phone, size: 24),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 24.0),
+                      child: Icon(Icons.phone, size: 24),
+                    ),
                     Spacer(flex: 1),
                     Text(
                       '(+20) 012345678910',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xFF58ACD5)..withOpacity(0.5),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Spacer(flex: 3),
+                  ],
+                ),
+              ),
+              SizedBox(height: 54),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 24.0),
+                      child: Icon(Icons.email, size: 24),
+                    ),
+                    Spacer(flex: 1),
+                    Text(
+                      'waelali@gmail.com',
                       style: TextStyle(
                         fontSize: 20,
                         color: Color(0xFF58ACD5)..withOpacity(0.5),
