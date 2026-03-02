@@ -1,16 +1,28 @@
-# business_card
+# Business Card Application
 
-A new Flutter project.
+A simple Flutter app that displays a personal business card centered on a dark screen.
 
-## Getting Started
+## Preview
 
-This project is a starting point for a Flutter application.
+A circular profile picture with name, job title, phone number, and email displayed in a clean layout.
 
-A few resources to get you started if this is your first Flutter project:
+## Run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Built With
+
+- Flutter & Dart
+
+## Asset Setup
+
+Add this to `pubspec.yaml`:
+
+```
+flutter:
+  assets:
+    - assets/images/user_profile.png
+```
