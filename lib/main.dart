@@ -13,35 +13,63 @@ class BusinessCard extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: const Color(0xFF323232),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              radius: 125,
-              backgroundColor: Color(0xFF58ACD5),
-              child: CircleAvatar(
-                radius: 120,
-                backgroundImage: AssetImage('assests/images/user_profile.png'),
+        body: Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 125,
+                backgroundColor: Color(0xFF58ACD5),
+                child: CircleAvatar(
+                  radius: 120,
+                  backgroundImage: AssetImage(
+                    'assests/images/user_profile.png',
+                  ),
+                ),
               ),
-            ),
-            SizedBox(height: 24),
-            Text(
-              'Wael Ali',
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
+              SizedBox(height: 24),
+              Text(
+                'Wael Ali',
+                style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            Text(
-              'Flutter developer',
-              style: TextStyle(
-                fontSize: 24,
-                color: Colors.white.withOpacity(0.5),
-                fontWeight: FontWeight.bold,
+              Text(
+                'Flutter developer',
+                style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.white.withOpacity(0.5),
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-          ],
+              SizedBox(height: 24),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Row(
+                  children: [
+                    Spacer(flex: 1),
+                    Icon(Icons.phone, size: 24),
+                    Spacer(flex: 1),
+                    Text(
+                      '(+20) 012345678910',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xFF58ACD5)..withOpacity(0.5),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Spacer(flex: 3),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
