@@ -45,7 +45,9 @@ class BusinessCard extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 24),
+              SizedBox(height: 14),
+              Divider(height: 1, color: Color(0xFF58ACD5)..withOpacity(0.5)),
+              SizedBox(height: 14),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -57,7 +59,7 @@ class BusinessCard extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 24.0),
                       child: Icon(Icons.phone, size: 24),
                     ),
-                    Spacer(flex: 1),
+                    Spacer(flex: 2),
                     Text(
                       '(+20) 012345678910',
                       style: TextStyle(
@@ -82,7 +84,7 @@ class BusinessCard extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 24.0),
                       child: Icon(Icons.email, size: 24),
                     ),
-                    Spacer(flex: 1),
+                    Spacer(flex: 2),
                     Text(
                       'waelali@gmail.com',
                       style: TextStyle(
